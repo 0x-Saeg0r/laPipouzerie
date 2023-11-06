@@ -2,52 +2,58 @@ function cat(args) {
   let path = window.location.pathname + "terminalfiles/";
 
   if (args[0] == null) {
-    cmdDone(); 
+    cmdDone();
     return;
   }
 
-  path = path + args[0]; 
-  $.ajax(path) 
-  .done(function(data) {
-    terminalPrint(data);
-  })
-  .fail(function() {
-    terminalPrint(args[0] + " does not exist or there was an error trying to access it.");
-  })
-  .always(function() {
-    cmdDone();
-  });
+  path = path + args[0];
+  $.ajax(path)
+    .done(function (data) {
+      terminalPrint(data);
+    })
+    .fail(function () {
+      terminalPrint(
+        args[0] + " does not exist or there was an error trying to access it."
+      );
+    })
+    .always(function () {
+      cmdDone();
+    });
 }
 
 function ls(args) {
   $.ajax("phputil/gettermfiles.php")
-  .done(function(data) {
-    let ar = JSON.parse(data);
+    .done(function (data) {
+      let ar = JSON.parse(data);
 
-    for (var v in ar) {
-      let str = ar[v];
+      for (var v in ar) {
+        let str = ar[v];
 
-      if ((args.length < 1 || args[0] != "-a") && str.match(/^(\.+)/gm)) {
-        continue;
+        if ((args.length < 1 || args[0] != "-a") && str.match(/^(\.+)/gm)) {
+          continue;
+        }
+
+        var isDirectory = ar[v].match(/\.\w+/g) == null;
+        if (isDirectory) {
+          str = `<span class="lsdir">` + str + `</span>`;
+        } else {
+          str =
+            `<a class="lsfile" href="#" onclick="clickCmd('cat ` +
+            ar[v] +
+            `')">` +
+            str +
+            `</a>`;
+        }
+
+        terminalPrint(str + "&#9;", false);
       }
 
-      var isDirectory = ar[v].match(/\.\w+/g) == null;
-      if (isDirectory) {
-        str = `<span class="lsdir">` + str + `</span>`;
-      } else {
-        str = `<a class="lsfile" href="#" onclick="clickCmd('cat ` + ar[v] + `')">` + str + `</a>`
-      }
-
-      terminalPrint(str + "&#9;", false);
-    }
-
-    terminalPrint("");
-  })
-  .fail(function() {
-  })
-  .always(function() {
-    cmdDone();
-  });
+      terminalPrint("");
+    })
+    .fail(function () {})
+    .always(function () {
+      cmdDone();
+    });
 }
 
 function cd(args) {
@@ -72,8 +78,13 @@ function cd(args) {
 function help() {
   let i = 1;
   for (var c in cmds) {
-    var notlast = (i != Object.keys(cmds).length);
-    var str = `<a href="#" class="helpcmd" onclick="clickCmd('` + c + `')">` + c + `</a>`
+    var notlast = i != Object.keys(cmds).length;
+    var str =
+      `<a href="#" class="helpcmd" onclick="clickCmd('` +
+      c +
+      `')">` +
+      c +
+      `</a>`;
 
     terminalPrint(str, !notlast);
 

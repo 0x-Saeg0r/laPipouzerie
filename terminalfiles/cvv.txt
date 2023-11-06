@@ -1,15 +1,14 @@
 <br>
 <b> CVV = Curriculum Vitae Virtuel</b>
 <hr/>
-<b>Influx</b> (serveur d'aide tech) - <u>22/08/2021 à aujourd'hui</u><br/>
-<a href="https://discord.gg/ejU7rfgXhn" target=”_blank”>https://discord.gg/ejU7rfgXhn</a><br/>
-<i>(Publications de tools en python)</i><br/>
+<b>Création de bots discord</b> - <u>2021 à aujourd'hui</u><br/>
+<i>(Multitâches et à usages personnels)</i><br/>
 <br/>
-<b>Wilson Island</b> (+250 membres) - <u>03/08/2020 à aujourd'hui</u><br/>
-<a href="https://discord.gg/veDUdJW2MV" target=”_blank”>https://discord.gg/veDUdJW2MV</a><br/>
-<i>(Helpeur)</i><br/>
+<b>CTF</b> (Capture The Flag) - <u>12/05/23 à aujourd'hui</u><br/>
+<i>Enzo et Arthur ont participés chacuns au 404CTF, finissant respectivement xème et 39ème sur 2847.</i><br/>
 <br/>
-<b>Mon Github</b> (j'y poste tous mes tools) - <u>12/06/2020 à aujourd'hui</u><br/>
-<a href="https://github.com/Arthurdufinister" target=”_blank”>https://github.com/Arthurdufinister</a><br/>
-<i>(principalement en python)</i>
+<b>Nos Github</b><br/>
+Github d'Arthur : <a href="https://github.com/Arthurdufinister" target="_blank">https://github.com/Arthurdufinister</a><br/>
+Github d'Enzo : <a href="https://github.com/Haetera" target="_blank">https://github.com/Haetera</a><br/>
+Github de Nolan : <a href="https://github.com/NolanJmn" target="_blank">https://github.com/NolanJmn</a><br/>
 <br/> 

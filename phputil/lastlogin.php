@@ -10,5 +10,3 @@ fwrite($fp, $s);
 fclose($fp);
 
 die($loginTime);
-
-?>

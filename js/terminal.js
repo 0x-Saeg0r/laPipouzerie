@@ -4,30 +4,32 @@ let inputBoxTemplate = `<input type="text" id="terminput" name="terminput">`;
 let textStampTemplate = `<span class="textstamp">{TEXT}</span><br/>`;
 let printTxtTemplate = `<span class="print">{TEXT}</span>`;
 let term;
-let inputBox; 
+let inputBox;
 
 let autowrite;
 let isAutoWriting = false;
 let autowriteQueue = [];
 
 function ready() {
-  term = $("#terminal"); 
+  term = $("#terminal");
 
-  $.ajax("phputil/lastlogin.php").done(function(lastLogin) {
-    $.ajax("systeminfos.txt").done(function(data) {
-      data = data.replace("{USERAGENT}", navigator.userAgent);
-      data = data.replace("{LASTLOGIN}", lastLogin);
+  $.ajax("phputil/lastlogin.php").done(function (lastLogin) {
+    $.ajax("systeminfos.txt")
+      .done(function (data) {
+        data = data.replace("{USERAGENT}", navigator.userAgent);
+        data = data.replace("{LASTLOGIN}", lastLogin);
 
-      terminalPrint(data);
-    }).always(function() {
-      setTimeout(function() {
-        addInputPrefix();
+        terminalPrint(data);
+      })
+      .always(function () {
+        setTimeout(function () {
+          addInputPrefix();
 
-        setInterval(autoWrite, 95);
-        autowriteQueue.push("cat welcome.txt");
-        autowriteQueue.push("ls");
-      }, 200);
-    });
+          setInterval(autoWrite, 95);
+          autowriteQueue.push("cat welcome.txt");
+          autowriteQueue.push("ls");
+        }, 200);
+      });
   });
 }
 
@@ -136,7 +138,9 @@ function resetInputBox(shouldStamp) {
   appendToTerm(inputBox);
 
   inputBox.on("keydown", onInputKeypress);
-  inputBox.on("focusout", function() { inputBox.focus(); });
+  inputBox.on("focusout", function () {
+    inputBox.focus();
+  });
   inputBox.focus();
 }
 
@@ -149,7 +153,6 @@ function terminalPrint(print, bre) {
 
   let text = $(printWMsg);
   appendToTerm(text);
-
 
   if (bre) {
     appendToTerm($("<br/>"));
@@ -183,7 +186,9 @@ function callCmd(str) {
   try {
     call(args);
   } catch (error) {
-    terminalPrint("Error processing command '" + cmd + "' with error: " + error);
+    terminalPrint(
+      "Error processing command '" + cmd + "' with error: " + error
+    );
     console.log("Error processing command '" + cmd + "' with error: " + error);
     cmdDone();
   }

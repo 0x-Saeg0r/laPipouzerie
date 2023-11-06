@@ -2,7 +2,8 @@ Bienvenue sur le terminal interactif de La Pipouzerie ! :)<br/>
 <br/>
 &#9; * Github d'Arthur : <a href="https://github.com/Arthurdufinister" target="_blank">https://github.com/Arthurdufinister</a><br/>
 &#9; * Github d'Enzo : <a href="https://github.com/Haetera" target="_blank">https://github.com/Haetera</a><br/>
-&#9; * Github de Nolan : <a href="https://github.com/NolanJmn" target="_blank">https://github.com/NolanJmn</a><br/>
+&#9; * Github de Noln : <a href="https://github.com/NolanJmn" target="_blank">https://github.com/NolanJmn</a><br/>
+&#9; * Parmi nous il y a aussi Violette et Ethan mais il n'ont pas de github :(<br/>
 &#9; * User Agent : {USERAGENT}<br/>
 &#9; * Support : Arthurdufinister (discord)<br/>
 <br/>

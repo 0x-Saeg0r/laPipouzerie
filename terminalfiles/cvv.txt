@@ -5,7 +5,7 @@
 <i>(Multitâches et à usages personnels)</i><br/>
 <br/>
 <b>CTF</b> (Capture The Flag) - <u>12/05/23 à aujourd'hui</u><br/>
-<i>Enzo et Arthur ont participés chacuns au 404CTF, finissant respectivement xème et 39ème sur 2847.</i><br/>
+<i>Enzo et Arthur ont participés chacuns au 404CTF, finissant respectivement 49ème et 39ème sur 2847.</i><br/>
 <br/>
 <b>Nos Github</b><br/>
 Github d'Arthur : <a href="https://github.com/Arthurdufinister" target="_blank">https://github.com/Arthurdufinister</a><br/>

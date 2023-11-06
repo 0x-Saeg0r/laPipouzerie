@@ -1,0 +1,15 @@
+<br>
+<b> CVV = Curriculum Vitae Virtuel</b>
+<hr/>
+<b>Influx</b> (serveur d'aide tech) - <u>22/08/2021 à aujourd'hui</u><br/>
+<a href="https://discord.gg/ejU7rfgXhn" target=”_blank”>https://discord.gg/ejU7rfgXhn</a><br/>
+<i>(Publications de tools en python)</i><br/>
+<br/>
+<b>Wilson Island</b> (+250 membres) - <u>03/08/2020 à aujourd'hui</u><br/>
+<a href="https://discord.gg/veDUdJW2MV" target=”_blank”>https://discord.gg/veDUdJW2MV</a><br/>
+<i>(Helpeur)</i><br/>
+<br/>
+<b>Mon Github</b> (j'y poste tous mes tools) - <u>12/06/2020 à aujourd'hui</u><br/>
+<a href="https://github.com/Arthurdufinister" target=”_blank”>https://github.com/Arthurdufinister</a><br/>
+<i>(principalement en python)</i>
+<br/> 

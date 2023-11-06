@@ -3,7 +3,7 @@
 On est La Pipouzerie (une private joke avec notre prof), on est des élèves de NSI de terminale à Saint François à Lesneven. Parmi nous il y a Violette, Ethan, Nolan, Enzo et Arthur !<br/>
 Pour en savoir plus sur nous, regarde 'about.txt'.<br/>
 <hr/>
-Ce site est basé sur un terminal Linux. Tu peux trouver le code source sur mon github ! (open source >>)<br/>
+Ce site est basé sur un terminal Linux. Tu peux trouver le code source sur mon github (<a href="https://github.com/Arthurdufinister/laPipouzerie" target="_blank">https://github.com/Arthurdufinister/laPipouzerie</a>) ! (open source >>)<br/>
 Si tu es familier avec ce type de terminal, n'hésites pas à utiliser les commandes ! Sinon tu peux simplement cliquer sur ses liens.<br/>
 Pour la liste des commandes, tape '<a href="#" class="helpcmd" onclick="clickCmd('help')">help</a>'<br/>
 <br/>
